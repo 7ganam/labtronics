@@ -965,6 +965,105 @@ section {
 }
 
 /*--------------------------------------------------------------
+# products
+--------------------------------------------------------------*/
+.products {
+  padding: 5px 0;
+  /*background: url("../img/factory.jpg") no-repeat;*/
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  min-height: 400px;
+}
+
+.products::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(233, 243, 253, 0.7);
+}
+
+.products .section-header {
+  margin-bottom: 40px;
+}
+
+.products .product-item {
+  text-align: center;
+  color: #fff;
+}
+
+.products .product-item .product-img {
+  width: 400px;
+  border-radius: 100%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+}
+
+.products .product-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: rgb(29, 27, 27);
+}
+
+.products .product-item h4 {
+  font-size: 14px;
+  color: #ddd;
+  margin: 0 0 15px 0;
+}
+
+.products .product-item .quote-icon-left, .products .product-item .quote-icon-right {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 26px;
+}
+
+.products .product-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.products .product-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.products .product-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+  color: #eee;
+}
+
+.products .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.products .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.products .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #093eb3;
+}
+
+@media (min-width: 992px) {
+  .Products .product-item p {
+    width: 80%;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
