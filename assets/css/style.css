@@ -973,7 +973,7 @@ section {
   background-position: center center;
   background-size: cover;
   position: relative;
-  min-height: 400px;
+  min-height: 200px;
 }
 
 .products::before {
